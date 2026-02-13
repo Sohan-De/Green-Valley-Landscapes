@@ -529,3 +529,81 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 100);
     }
 });
+
+// ============================================
+// BEFORE / AFTER SLIDER FUNCTIONALITY
+// ============================================
+
+function initBeforeAfter() {
+    const sliders = document.querySelectorAll('.ba-card');
+
+    sliders.forEach(slider => {
+        const before = slider.querySelector('.ba-before');
+        const beforeImg = slider.querySelector('.ba-before img');
+        const divider = slider.querySelector('.ba-divider');
+        let isActive = false;
+
+        // Initialize Image Width
+        // The image inside the resizing container needs to stay the full width of the card
+        const updateImageWidth = () => {
+            if (beforeImg) {
+                beforeImg.style.width = `${slider.offsetWidth}px`;
+            }
+        };
+
+        // Call initially and on resize
+        updateImageWidth();
+        window.addEventListener('resize', updateImageWidth);
+
+        // Interaction Handling
+        const handleMove = (e) => {
+            if (!isActive) return;
+
+            let clientX;
+            if (e.type === 'touchmove') {
+                clientX = e.touches[0].clientX;
+            } else {
+                clientX = e.clientX;
+            }
+
+            const rect = slider.getBoundingClientRect();
+            let x = clientX - rect.left;
+
+            // Constrain x within basic limits to avoid glitches
+            if (x < 0) x = 0;
+            if (x > rect.width) x = rect.width;
+
+            const percent = (x / rect.width) * 100;
+
+            // Update widths and positions
+            before.style.width = `${percent}%`;
+            if (divider) {
+                divider.style.left = `${percent}%`;
+            }
+        };
+
+        const startDrag = (e) => {
+            isActive = true;
+            // Prevent text selection
+            e.preventDefault();
+        };
+
+        const stopDrag = () => {
+            isActive = false;
+        };
+
+        // Events
+        // Add events to the slider container for easier dragging
+        slider.addEventListener('mousedown', startDrag);
+        slider.addEventListener('touchstart', startDrag);
+
+        window.addEventListener('mousemove', handleMove);
+        window.addEventListener('touchmove', handleMove);
+
+        window.addEventListener('mouseup', stopDrag);
+        window.addEventListener('touchend', stopDrag);
+    });
+}
+
+// Initialize slider logic
+document.addEventListener('DOMContentLoaded', initBeforeAfter);
