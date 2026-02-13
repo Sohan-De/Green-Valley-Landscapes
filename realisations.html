@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Découvrez nos réalisations en aménagement paysager, entretien de jardin et pose de clôtures. Qualité garantie par Green Valley Landscapes.">
+    <title>Nos Réalisations | Green Valley Landscapes</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/realisations.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">
+                <i class="fas fa-leaf"></i>
+                <span>Green Valley</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">Accueil</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="realisations.html#re-hero" class="nav-link active">Réalisations</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="tel:+1234567890" class="phone-link">
+                    <i class="fas fa-phone"></i>
+                    <span>(123) 456-7890</span>
+                </a>
+                <button class="btn btn-primary" onclick="scrollToContact()">Devis Gratuit</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="realisations-hero" id="re-hero">
+        <div class="container">
+            <h1>Nos Projets Terminés</h1>
+            <p>Découvrez l'excellence de notre travail à travers une sélection de nos plus belles transformations
+                extérieures.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="gallery-header">
+                <h2 class="gallery-title">Galerie de réalisations</h2>
+                <p class="gallery-description">Nos réalisations mettent en valeur notre savoir-faire en abattage
+                    d'arbres, tonte de pelouse, pose de grillage et installation de clôtures pour sublimer vos espaces
+                    extérieurs.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/5.jpg" alt="Réalisation Green Valley - Projet 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/6.jpg" alt="Réalisation Green Valley - Projet 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/7.jpg" alt="Réalisation Green Valley - Projet 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/8.jpg" alt="Réalisation Green Valley - Projet 8">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/9.jpg" alt="Réalisation Green Valley - Projet 9">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/after.jpg" alt="Réalisation Green Valley - Après">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/a.jpg" alt="Réalisation Green Valley - Projet A">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/10.jpg" alt="Réalisation Green Valley - Projet 10">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/11.jpg" alt="Réalisation Green Valley - Projet 11">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/12.jpg" alt="Réalisation Green Valley - Projet 12">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before / After Results Section -->
+    <section class="before-after" id="results">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos Résultats : Avant / Après</h2>
+                <p class="section-description">Visualisez l'impact de nos interventions à travers ces exemples concrets
+                    de transformation.</p>
+            </div>
+            <div class="ba-grid">
+                <!-- Result 1 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/1/before.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/1/10.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 2 (Folder 2 has non-standard names, using based on numeric order) -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/2/aa_new_image1 (1).jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/2/aa_new_image2 (1).jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 3 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/3/before.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/3/after.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 4 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/4/before.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/4/after.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 5 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/5/before.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/5/after.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 6 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/6/before.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/6/after.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 8 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/8/before.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/8/after.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 12 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/12/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/12/a.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 13 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/13/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/13/a.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 14 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/14/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/14/a.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 15 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/15/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/15/12.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 17 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/17/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/17/a.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 18 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/18/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/18/a.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 19 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/19/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/19/a.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 20 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/20/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/20/a.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 22 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/22/bb.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/22/aa.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 23 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/23/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/23/3.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 24 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/24/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/24/4.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 26 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/26/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/26/a.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 27 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/27/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/27/a.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 28 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/28/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/28/a.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 30 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/30/b.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/30/a.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 31 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/31/aa_new_image35.jpg" alt="Avant">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/31/11.jpg" alt="Après">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>Green Valley</span>
+                    </div>
+                    <p class="footer-description">
+                        Services professionnels d'aménagement paysager et d'entretien
+                        de confiance. Nous transformons vos espaces extérieurs depuis 2009.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Nos Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#services">Abattage et Élagage d'Arbres</a></li>
+                        <li><a href="services.html#services">Entretien de Pelouse</a></li>
+                        <li><a href="services.html#services">Réparation de Clôture</a></li>
+                        <li><a href="services.html#services">Installation de Grillage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Coordonnées</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@greenvalley.com">info@greenvalley.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Région Métropolitaine</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Green Valley Landscapes. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

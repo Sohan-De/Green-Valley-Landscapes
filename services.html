@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Découvrez nos services complets d'aménagement paysager, d'entretien de pelouse et d'élagage. Solutions professionnelles pour votre extérieur.">
+    <title>Nos Services | Green Valley Landscapes</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+
+<body class="services-page">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">
+                <i class="fas fa-leaf"></i>
+                <span>Green Valley</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">Accueil</a></li>
+                <li><a href="#services-hero" class="nav-link active">Services</a></li>
+                <li><a href="realisations.html" class="nav-link">Réalisations</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="tel:+1234567890" class="phone-link">
+                    <i class="fas fa-phone"></i>
+                    <span>(123) 456-7890</span>
+                </a>
+                <button class="btn btn-primary" onclick="scrollToContact()">Devis Gratuit</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Hero Section -->
+    <section class="services-page-hero" id="services-hero">
+        <div class="container">
+            <h1>Nos Services d'Expertise</h1>
+            <p>Des solutions sur mesure pour l'entretien et l'embellissement de votre patrimoine paysager. Qualité,
+                rigueur et passion à votre service.</p>
+        </div>
+    </section>
+
+    <!-- Main Services Section (Section 3 from Home) -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Solutions d'Experts pour votre Propriété</h2>
+                <p class="section-description">
+                    Nous offrons des services complets d'aménagement paysager et d'entretien pour que votre propriété
+                    conserve son meilleur aspect toute l'année.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="images/1.jpg" alt="Abattage d'arbres" class="service-card-image">
+                    </div>
+                    <h3 class="service-title">Abattage et Élagage d'Arbres</h3>
+                    <p class="service-description">
+                        Services professionnels de soins aux arbres, y compris l'élagage, la taille et l'enlèvement en
+                        toute sécurité.
+                        Nous entretenons la santé et la beauté de vos arbres.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Enlèvement sécurisé</li>
+                        <li><i class="fas fa-check"></i> Éclaircissage et mise en forme</li>
+                        <li><i class="fas fa-check"></i> Dégâts d'orage d'urgence</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="window.location.href='contact.html'">En savoir
+                        plus</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="images/2.jpg" alt="Entretien de pelouse" class="service-card-image">
+                    </div>
+                    <h3 class="service-title">Entretien de Pelouse et Gazon</h3>
+                    <p class="service-description">
+                        Gardez votre pelouse luxuriante et saine grâce à nos services d'entretien réguliers.
+                        De la tonte à la fertilisation, nous avons tout ce qu'il vous faut.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Tonte et bordure régulières</li>
+                        <li><i class="fas fa-check"></i> Programmes de fertilisation</li>
+                        <li><i class="fas fa-check"></i> Désherbage et aération</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="window.location.href='contact.html'">En savoir
+                        plus</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="images/3.jpg" alt="Réparation de clôture" class="service-card-image">
+                    </div>
+                    <h3 class="service-title">Réparation de Murs et Clôtures</h3>
+                    <p class="service-description">
+                        Réparation et restauration expertes de murs et de clôtures. Nous réparons les dommages et
+                        renforçons les structures pour assurer la longévité et la sécurité.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Réparations structurelles</li>
+                        <li><i class="fas fa-check"></i> Remplacement de poteaux</li>
+                        <li><i class="fas fa-check"></i> Installation de portails</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="window.location.href='contact.html'">En savoir
+                        plus</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="images/4.jpg" alt="Installation de grillage" class="service-card-image">
+                    </div>
+                    <h3 class="service-title">Installation de Clôture en Filtet/Grillage</h3>
+                    <p class="service-description">
+                        Installation de clôtures en grillage et en filet de qualité pour la sécurité, l'intimité et
+                        la protection. Matériaux durables et installation professionnelle.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Dimensions personnalisées</li>
+                        <li><i class="fas fa-check"></i> Matériaux durables</li>
+                        <li><i class="fas fa-check"></i> Installation professionnelle</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="window.location.href='contact.html'">En savoir
+                        plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services Section (Section 4 from Home) -->
+    <section class="additional-services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services Supplémentaires</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="other-services-grid">
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Enlèvement des déchets de jardin</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Essouchage</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Lavage sous pression</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Taille de haies</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Plantation saisonnière</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Réparation de système d'irrigation</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Nettoyage de gouttières</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Aération du sol</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Services de paillage</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Assemblage de serre</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Déneigement (Saisonnier)</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Installation d'éclairage extérieur</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Entretien de bassin</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Installation de bac à compost</span>
+                </div>
+                <div class="other-service-item">
+                    <i class="fas fa-check"></i>
+                    <span>Pose de gazon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before / After Results Section (Section 5 from Home) -->
+    <section class="before-after" id="results">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos Résultats : Avant / Après</h2>
+            </div>
+            <div class="ba-grid">
+                <!-- Result 1 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/before.jpg" alt="Avant élagage">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/after.jpg" alt="Après élagage">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 2 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/b.jpg" alt="Avant réparation de clôture">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/a.jpg" alt="Après réparation de clôture">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+
+                <!-- Result 3 -->
+                <div class="ba-card">
+                    <div class="ba-side ba-before">
+                        <img src="images/bb.jpg" alt="Avant entretien de jardin">
+                        <span class="ba-label">Avant</span>
+                    </div>
+                    <div class="ba-divider">
+                        <div class="ba-circle"></div>
+                    </div>
+                    <div class="ba-side ba-after">
+                        <img src="images/aa.jpg" alt="Après entretien de jardin">
+                        <span class="ba-label">Après</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ce que disent nos clients</h2>
+                <p class="section-description">La satisfaction de nos clients est notre plus grande récompense.
+                    Découvrez leurs témoignages.</p>
+            </div>
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Un travail d'élagage exceptionnel. L'équipe a été très professionnelle, rapide et a laissé le
+                        chantier impeccable. Je recommande vivement Green Valley !"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sophie Bernard</h4>
+                            <span>Bois-Colombes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Nous avons fait appel à eux pour l'entretien complet de notre jardin. Le résultat est
+                        magnifique, notre pelouse n'a jamais été aussi verte."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Marc Lefebvre</h4>
+                            <span>Rueil-Malmaison</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Réparation de clôture effectuée avec beaucoup de soin. Matériaux de qualité et pose parfaite.
+                        Un grand merci pour votre sérieux."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Julie Dubois</h4>
+                            <span>Saint-Cloud</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Questions Fréquentes</h2>
+                <p class="section-description">Trouvez des réponses rapides aux questions les plus courantes sur nos
+                    services.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> Comment se déroule un projet d'aménagement ?</h4>
+                    <p>Nous commençons par une visite sur place pour comprendre vos besoins, suivie d'un devis gratuit.
+                        Une fois validé, nous planifions l'intervention selon vos disponibilités.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> Proposez-vous des contrats d'entretien annuel ?</h4>
+                    <p>Oui, nous proposons des forfaits d'entretien saisonnier ou annuel pour garantir que votre jardin
+                        reste impeccable tout au long de l'année sans que vous ayez à vous en souciez.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> Quels matériaux utilisez-vous pour les clôtures ?</h4>
+                    <p>Nous utilisons uniquement des matériaux de haute qualité : bois traité, composite, grillage
+                        galvanisé ou aluminium, sélectionnés pour leur durabilité et leur esthétique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>Green Valley</span>
+                    </div>
+                    <p class="footer-description">
+                        Services professionnels d'aménagement paysager et d'entretien
+                        de confiance. Nous transformons vos espaces extérieurs depuis 2009.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html#results">Réalisations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Nos Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#services">Abattage et Élagage d'Arbres</a></li>
+                        <li><a href="services.html#services">Entretien de Pelouse</a></li>
+                        <li><a href="services.html#services">Réparation de Clôture</a></li>
+                        <li><a href="services.html#services">Installation de Grillage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Coordonnées</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@greenvalley.com">info@greenvalley.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Région Métropolitaine</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Green Valley Landscapes. Tous droits réservés.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

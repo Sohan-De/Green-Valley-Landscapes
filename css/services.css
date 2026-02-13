@@ -1,0 +1,39 @@
+/* ============================================
+   SERVICES PAGE SPECIFIC STYLES
+   ============================================ */
+
+.services-page-hero {
+    padding: 120px 0 80px;
+    background: linear-gradient(rgba(45, 80, 22, 0.9), rgba(45, 80, 22, 0.8)), url('../images/Hero Bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+}
+
+.services-page-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.services-page-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Custom adjustments for services page if needed */
+.services-page .services {
+    background: var(--white);
+}
+
+.services-page .additional-services {
+    background: var(--off-white);
+}
+
+.services-page .before-after {
+    background: var(--white);
+}

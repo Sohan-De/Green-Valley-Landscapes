@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contactez Green Valley Landscapes pour vos projets d'aménagement paysager. Devis gratuit et conseils d'experts.">
+    <title>Contactez-nous | Green Valley Landscapes</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">
+                <i class="fas fa-leaf"></i>
+                <span>Green Valley</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">Accueil</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="realisations.html" class="nav-link">Réalisations</a></li>
+                <li><a href="#contact-hero" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="tel:+1234567890" class="phone-link">
+                    <i class="fas fa-phone"></i>
+                    <span>(123) 456-7890</span>
+                </a>
+                <button class="btn btn-primary" onclick="scrollToContact()">Devis Gratuit</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="contact-page-hero" id="contact-hero">
+        <div class="container">
+            <h1>Parlons de votre projet</h1>
+            <p>Notre équipe est prête à transformer votre jardin. Contactez-nous pour une consultation personnalisée et
+                un devis sans engagement.</p>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Info Side -->
+                <div class="contact-info-side">
+                    <div class="contact-info-cards">
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <div class="info-card-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <h3>Téléphone</h3>
+                            </div>
+                            <p>Du lun au ven, 8h - 18h</p>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <div class="info-card-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h3>Email</h3>
+                            </div>
+                            <p>Nous répondons sous 24h</p>
+                            <a href="mailto:contact@greenvalley.com">contact@greenvalley.com</a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <div class="info-card-icon">
+                                    <i class="fas fa-location-dot"></i>
+                                </div>
+                                <h3>Zone de Service</h3>
+                            </div>
+                            <p>Région Métropolitaine et villes <br>environnantes sur 50km.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Form Side -->
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2>Envoyez-nous un message</h2>
+                        <p>Remplissez le formulaire ci-dessous et l'un de nos paysagistes vous contactera très
+                            rapidement.</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom Complet</label>
+                            <input type="text" id="name" name="name" required placeholder="Ex: Jean Dupont">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="jean@exemple.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Souhaité</label>
+                            <select id="service" name="service" required>
+                                <option value="">Choisir une option</option>
+                                <option value="tree">Abattage et Élagage</option>
+                                <option value="lawn">Entretien de Pelouse</option>
+                                <option value="fence">Réparation/Clôture</option>
+                                <option value="design">Design de Jardin</option>
+                                <option value="other">Autre demande</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Détails de votre projet</label>
+                            <textarea id="message" name="message" rows="6" required
+                                placeholder="Dites-nous en plus sur vos besoins..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span>Envoyer ma demande</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>Green Valley</span>
+                    </div>
+                    <p class="footer-description">
+                        Services professionnels d'aménagement paysager et d'entretien
+                        de confiance. Nous transformons vos espaces extérieurs depuis 2009.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html#results">Réalisations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Nos Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#services">Abattage et Élagage d'Arbres</a></li>
+                        <li><a href="services.html#services">Entretien de Pelouse</a></li>
+                        <li><a href="services.html#services">Réparation de Clôture</a></li>
+                        <li><a href="services.html#services">Installation de Grillage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Coordonnées</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@greenvalley.com">info@greenvalley.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Région Métropolitaine</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Green Valley Landscapes. Tous droits réservés.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
